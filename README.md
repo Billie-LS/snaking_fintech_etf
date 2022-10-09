@@ -140,7 +140,12 @@ Santiago Pedemonte
 
 ___
 
+Stratis Gavnoudias
+
+___
+
 Inner Joins [W3 schools](https://www.w3schools.com/sql/sql_join_inner.asp)
+
 Annualized returns [datacamp](https://campus.datacamp.com/courses/introduction-to-portfolio-analysis-in-python/risk-and-return?ex=1)
 
 ---
