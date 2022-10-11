@@ -1,0 +1,100 @@
+ 5121  cd Desktop
+ 5122  git clone git@github.com:Billie-LS/snaking_fintech_etf.git
+ 5123  git clone git@github.com:Billie-LS/Proptech_analysis_and_visualization.git
+ 5124  conda activate jupyterlab_env
+ 5125  jupyter lab
+ 5126  cd ~
+ 5127  cd Desktop
+ 5128  ls
+ 5129  cd snaking_fintech_etf
+ 5130  code .
+ 5131  conda deactivate
+ 5132  git statu
+ 5133  git status
+ 5134  git add .
+ 5135  git commit -m 'starter_code, gitignore, readme'
+ 5136  git push
+ 5137  jupyter lab
+ 5138  conda activate jupyterlab_env
+ 5139  jupyter lab
+ 5140  conda deactivate
+ 5141  jupyter lab
+ 5142  conda deactivate
+ 5143  git analyze
+ 5144  git status
+ 5145  git add .
+ 5146  git add *
+ 5147  git commit -m 'code initialize'
+ 5148  git push
+ 5149  conda deactivate
+ 5150  conda activate jupyterlab_env
+ 5151  jupyter lab
+ 5152  conda deactivate
+ 5153  git status
+ 5154  git add .
+ 5155  git add *
+ 5156  git commit -m 'code progress, readme contribute'
+ 5157  git push
+ 5158  conda deactivate
+ 5159  conda activate jupyterlab_env
+ 5160  jupyter lab
+ 5161  conda deactivate
+ 5162  conda activate jupyterlab_env
+ 5163  jupyter lab
+ 5164  git status
+ 5165  git add .
+ 5166  git add *
+ 5167  git commit -m 'work in progress'
+ 5168  git push
+ 5169  git pull
+ 5170  conda activate jupyterlab_env
+ 5171  jupyter lab
+ 5172  git status
+ 5173  git add .
+ 5174  git add *
+ 5175  git status
+ 5176  git commit -m 'crash and burn still'
+ 5177  git push
+ 5178  conda deactivate
+ 5179  conda activate jupyterlab_env
+ 5180  jupyter lab
+ 5181  git add .
+ 5182  git add *
+ 5183  git commit -m 'failing'
+ 5184  git push
+ 5185  conda activate jupyterlab_env
+ 5186  jupyter lab
+ 5187  conda activate jupyterlab_env
+ 5188  pip install pandas_datareader
+ 5189  python mpt.py
+ 5190  clear
+ 5191  python mpt.py
+ 5192  pip install yfinance
+ 5193  python mpt.py
+ 5194  pip install fix_yahoo_finance
+ 5195  python mpt.py
+ 5196  pip install yfinance -U
+ 5197  python mpt.py
+ 5198  conda deactivate
+ 5199  conda activate jupyterlab_env
+ 5200  jupyter lab
+ 5201  conda activate jupyterlab_env
+ 5202  jupyter lab
+ 5203  python mpt.py
+ 5204  conda activate jupyterlab_env
+ 5205  python mpt.py
+ 5206  git status
+ 5207  git add .
+ 5208  git add *
+ 5209  git commit -m 'work in prog'
+ 5210  git push
+ 5211  conda activate jupyterlab_env
+ 5212  jupyter lab
+ 5213  conda activate jupyterlab_env
+ 5214  pip python --version
+ 5215  python --version
+ 5216  anaconda --version
+ 5217  conda --version
+ 5218  pip --version
+ 5219  git --version
+ 5220  conda deactivate

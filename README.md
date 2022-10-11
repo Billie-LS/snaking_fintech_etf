@@ -1,14 +1,8 @@
 # **Columbia University Engineering, New York FinTech BootCamp** 
 # **August 2022 Cohort**
-## *Proptech tool application - simulate one-click service to buy properties and then rent them*
+## *Passive Investing exchange-traded fund (ETF)* 
 
-Objective - to simulate local community PropTech consulting operations. 
-Scenario - as acting analyst, within PropTech Firm (stakeholder/user), utilize data visualization skills, including aggregation, interactive visualizations, and geospatial analysis, to identify properties in the San Francisco market that are viable investment opportunities. 
-Product/deliverable - creation of a Jupyter notebook that contains your analysis of the housing rental market data for San Francisco. The analysis will be complete with professionally styled and formatted interactive visualizations.
-
-Part 1:  import, clean, and analyze data
-
-Part 2:  develop visualization tools to analyze the data
+Objective - to script a financial database and web application using SQL, Python, and the Voilà library to analyze the performance of a hypothetical FinTech ETF. 
 
 Beyond the scope of the assignment, the author sought to conduct additional refinement and/or analysis of the data obtained and demonstrate further visualization....  Supplemental and/or extra analysis beyond the scope of the project is noted as 'supplemental' were approrpiate. 
 
@@ -18,22 +12,25 @@ Beyond the scope of the assignment, the author sought to conduct additional refi
 ## **Methods**
 ### The code script analysis performed:
     
-#### Step I - Create a visual aggregation explore the housing units by year (2010 to 2016)
+#### Step I - Analyze a single asset in the FinTech ETF, provide visualization
 
 ![viz1](Images/viz1.png)
 
-#### Step I - Supplementals
 
 ![viz2](Images/viz2.png)
 
-
-#### Step II - Create an interactive line plot that visualizes both Sale Price Sqr Foot and Gross Rent by Neighborhood
+#### Step I - Supplementals analyze all individual assets in the FinTech ETF, provide visualization
 
 ![viz3](Images/viz3.png)
 
-### Step III - Create an interactive GeoViews points plot for All Neighborhoods
 
 ![viz4](Images/viz4.png)
+
+
+#### Step II - Optimize the SQL Queries, analyze the ETF overall cumulative performance, provide visualization
+
+![viz5](Images/viz5.png)
+
 
 ---
 ## **Technologies**
@@ -42,17 +39,21 @@ Beyond the scope of the assignment, the author sought to conduct additional refi
 
 This project leverages Jupyter Lab v3.4.4 and python v3.7 with the following packages:
 
+* [numpy](https://numpy.org/doc/stable/) - Software library, NumPy is the fundamental package for scientific computing in Python, provides vast functionality.
+
 * [pandas](https://pandas.pydata.org/docs/) - Software library written for the python programming language for data manipulation and analysis.
 
-* [read_csv](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html) - From 'pandas', reads a comma-separated values (csv) file into DataFrame.
+* [read_sql_query](https://pandas.pydata.org/docs/reference/api/pandas.read_sql_query.html) - From 'pandas', read SQL query into a DataFrame; returns a DataFrame corresponding to the result set of the SQL query string.
 
 * [concat](https://pandas.pydata.org/docs/reference/api/pandas.concat.html) - From 'pandas', concatenate pandas objects along a particular axis, allows optional set logic along the other axes.
 
-* [numpy](https://numpy.org/doc/stable/) - Software library, NumPy is the fundamental package for scientific computing in Python, provides vast functionality.
-
-* [Path](https://docs.python.org/3/library/pathlib.html) - From pathlib - Object-oriented filesystem paths, Path instantiates a concrete path for the platform the code is running on.
-
 * [hvplot](https://hvplot.holoviz.org/user_guide/Introduction.html) - provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data into numerous formats listed within linked documentation.
+
+* [SQLAlchemy](https://www.sqlalchemy.org/) - the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.
+
+* [Engine](https://docs.sqlalchemy.org/en/14/core/engines.html) - From 'SQLAlchemy', the starting point for any SQLAlchemy application; creates a tailored Dialect object, as well as a Pool object which will establish a DBAPI connection.
+
+* [Inspection](https://docs.sqlalchemy.org/en/14/core/inspection.html) - From 'SQLAlchemy', inspection module provides the inspect() function, which delivers runtime information about a wide variety of SQLAlchemy objects, both within the Core as well as the ORM.
 
 
 ### **Hardware used for development**
@@ -69,12 +70,12 @@ Homebrew 3.5.10
     Homebrew/homebrew-core (git revision 0b6b6d9004e; last commit 2022-08-30)
     Homebrew/homebrew-cask (git revision 63ae652861; last commit 2022-08-30)
 
-anaconda Command line client 1.10.0
+anaconda Command line client 1.11.0
 
-    conda 4.13.0
-    Python 3.9
+    conda 22.9.0
+    Python 3.9.13
 
-pip 22.1.2 from /opt/anaconda3/envs/dev/lib/python3.7/site-packages/pip (python 3.7)
+pip 22.2.2 from /opt/anaconda3/envs/jupyterlab_env/lib/python3.9/site-packages/pip (python 3.9)
 
 
 git version 2.37.2
@@ -85,7 +86,7 @@ git version 2.37.2
  In the terminal, navigate to directory where you want to install this application from the repository and enter the following command
 
 ```python
-git clone git@github.com:Billie-LS/Proptech_analysis_and_visualization.git
+git clone git@github.com:Billie-LS/snaking_fintech_etf.git
 ```
 
 ---
@@ -100,7 +101,7 @@ From terminal, the installed application is run through jupyter lab web-based in
 The file you will run is:
 
 ```python
-  san_francisco_housing.ipynb
+  etf_analyzer.ipynb
 ```
 
 ---
@@ -138,15 +139,28 @@ Santiago Pedemonte
     [LinkedIn](https://www.linkedin.com/in/s-pedemonte/)
     [@GitHub](https://github.com/Santiago-Pedemonte)
 
-___
+
+### **BootCamp classmates**
 
 Stratis Gavnoudias
+    [LinkedIn](https://www.linkedin.com/in/stratis-gavnoudias-465b527/)
+    [@GitHub](https://github.com/sgavnoudias)
 
 ___
 
-Inner Joins [W3 schools](https://www.w3schools.com/sql/sql_join_inner.asp)
+### **Other Reference Sources**
 
-Annualized returns [datacamp](https://campus.datacamp.com/courses/introduction-to-portfolio-analysis-in-python/risk-and-return?ex=1)
+SQLAlchemy [PYSHEET](https://www.pythonsheets.com/notes/python-sqlalchemy.html)
+
+set dataframe index [pandas](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.set_index.html)
+
+pandas.DataFrame.to_sql [pandas](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_sql.html#pandas-dataframe-to-sql)
+
+inner joins [W3 schools](https://www.w3schools.com/sql/sql_join_inner.asp)
+
+annualized returns [datacamp](https://campus.datacamp.com/courses/introduction-to-portfolio-analysis-in-python/risk-and-return?ex=1)
+
+add an empty column to a dataframe [stack_overflow](https://stackoverflow.com/questions/16327055/how-to-add-an-empty-column-to-a-dataframe)
 
 ---
 ## **License**
