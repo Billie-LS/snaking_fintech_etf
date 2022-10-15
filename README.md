@@ -32,6 +32,14 @@ Beyond the scope of the assignment, the author sought to conduct additional refi
 ![viz5](Images/viz5.png)
 
 
+#### Final Voila Images 
+
+![voila1](Images/voila1.png)
+
+![voila2](Images/voila2.png)
+
+![voila3](Images/voila3.png)
+
 ---
 ## **Technologies**
 ---
